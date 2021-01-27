@@ -42,8 +42,8 @@ class MedNISTDataset(Randomizable, CacheDataset):
             if expected file already exists, skip downloading even set it to True.
             user can manually copy `MedNIST.tar.gz` file or `MedNIST` folder to root directory.
         seed: random seed to randomly split training, validation and test datasets, default is 0.
-        val_frac: percentage of of validation fraction in the whole dataset, default is 0.1.
-        test_frac: percentage of of test fraction in the whole dataset, default is 0.1.
+        val_frac: percentage of validation fraction in the whole dataset, default is 0.1.
+        test_frac: percentage of test fraction in the whole dataset, default is 0.1.
         cache_num: number of items to be cached. Default is `sys.maxsize`.
             will take the minimum of (cache_num, data_length x cache_rate, data_length).
         cache_rate: percentage of cached data in total, default is 1.0 (cache all).
